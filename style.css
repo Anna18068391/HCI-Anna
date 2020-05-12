@@ -1,3 +1,5 @@
+ @import url("https://use.typekit.net/yhd0grc.css");
+
 *{
 	margin: 0;
 	padding: 0;
@@ -5,8 +7,91 @@
 
 body{
 	font-family: sans-serif;
+	background-color: deepskyblue;
 }
 
 header{
-	background-color: cornflowerblue;
+	background-color: /*cornflowerblue*/dodgerblue;
+	text-align: center;
+	padding: 1%;
+}
+
+h1{
+	font-family: acier-bat-noir, sans-serif;
+	font-size: 3em;
+	margin-bottom: 5px;
+}
+
+nav{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+nav a{
+	margin: 0 2% 10px 2%;
+	color:black;
+	background-color: white;
+	text-decoration: none;
+	border-radius: 2em;
+	padding: 5px 2%;
+}
+
+nav a:hover{
+	color:dodgerblue;
+	background-color: white;
+}
+
+nav a:active{
+	color:white;
+	background-color: dodgerblue;
+}
+
+main{
+	padding:2% 4%;
+	background-color: white;
+}
+
+article{
+	margin:40px 0;
+}
+
+article:first-of-type{
+	margin-top: 0;
+}
+
+h2{
+	font-family: acier-bat-solid, sans-serif;
+	font-size: 1.8em;
+	margin:20px 0px;
+}
+
+h3{
+	margin:10px 0px;
+}
+
+#up{
+	position: fixed;
+	bottom:20px; 
+	right:0.5%;
+	margin: 0 2% 10px 2%;
+	color:black;
+	background-color: white;
+	text-decoration: none;
+	border-radius: 2em;
+	padding: 5px 10px;
+	font-weight: bold;
+}
+
+#up:hover{
+	color:white;
+	background-color: dodgerblue;
+}
+
+@media only screen and (min-width: 1024px){
+	main{
+		width:70%;
+		margin: auto;
+	}
 }
