@@ -89,6 +89,28 @@ h3{
 	background-color: dodgerblue;
 }
 
+main a[href]{
+ text-decoration: none;
+}
+
+p{
+	margin: 20px 0;
+}
+
+img{
+	width: 30%;
+	float:right;
+	margin: 0 20px;
+}
+
+img.klein{
+	width: 10%;
+}
+
+img.groot{
+	width: 100%;
+}
+
 @media only screen and (min-width: 1024px){
 	main{
 		width:70%;
