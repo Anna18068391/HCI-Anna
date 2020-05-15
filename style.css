@@ -97,7 +97,7 @@ p{
 	margin: 20px 0;
 }
 
-img{
+img, video{
 	width: 30%;
 	float:right;
 	margin: 0 20px;
