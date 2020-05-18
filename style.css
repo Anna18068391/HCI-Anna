@@ -19,13 +19,12 @@ header{
 h1{
 	font-family: acier-bat-noir, sans-serif;
 	font-size: 3em;
-	margin-bottom: 5px;
 }
 
 nav{
 	margin-top: 20px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
 
@@ -53,6 +52,10 @@ main{
 	background-color: white;
 }
 
+em{
+	font-weight:bold;
+}
+
 article{
 	margin:40px 0;
 }
@@ -69,6 +72,11 @@ h2{
 
 h3{
 	margin:10px 0px;
+}
+
+footer{
+	height: 100px;
+	background-color: dodgerblue;
 }
 
 #up{
@@ -100,7 +108,7 @@ p{
 img, video{
 	width: 30%;
 	float:right;
-	margin: 0 20px;
+	margin: 0 10px;
 }
 
 img.klein{
@@ -109,6 +117,17 @@ img.klein{
 
 img.groot{
 	width: 100%;
+}
+
+.galerij{
+	display:flex;
+	flex-wrap: wrap;
+	/*justify-content:space-between;*/
+}
+
+.galerij img, .galerij video{
+	float:none;
+	margin:10px;
 }
 
 @media only screen and (min-width: 1024px){
