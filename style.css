@@ -105,7 +105,7 @@ p{
 	margin: 20px 0;
 }
 
-img, video{
+img, video, iframe{
 	width: 30%;
 	float:right;
 	margin: 0 10px;
@@ -122,10 +122,10 @@ img.groot{
 .galerij{
 	display:flex;
 	flex-wrap: wrap;
-	/*justify-content:space-between;*/
+	align-items: flex-start;
 }
 
-.galerij img, .galerij video{
+.galerij img, .galerij video, .galerij iframe{
 	float:none;
 	margin:10px;
 }
