@@ -106,17 +106,8 @@ p{
 }
 
 img, video, iframe{
-	width: 30%;
-	float:right;
-	margin: 0 10px;
-}
-
-img.klein{
-	width: 10%;
-}
-
-img.groot{
 	width: 100%;
+	margin: 10px;
 }
 
 .galerij{
@@ -134,5 +125,15 @@ img.groot{
 	main{
 		width:70%;
 		margin: auto;
+	}
+
+	img, video, iframe{
+	width: 30%;
+	float:right;
+	margin: 0 10px;
+	}
+
+	img.klein{
+		width: 10%;
 	}
 }
