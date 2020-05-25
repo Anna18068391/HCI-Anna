@@ -56,6 +56,14 @@ em{
 	font-weight:bold;
 }
 
+main a:link {
+  color: dodgerblue;
+}
+
+main a:visited {
+  color: cornflowerblue;
+}
+
 article{
 	margin:40px 0;
 }
@@ -72,33 +80,6 @@ h2{
 
 h3{
 	margin:10px 0px;
-}
-
-footer{
-	height: 100px;
-	background-color: dodgerblue;
-}
-
-#up{
-	position: fixed;
-	bottom:20px; 
-	right:0.5%;
-	margin: 0 2% 10px 2%;
-	color:black;
-	background-color: white;
-	text-decoration: none;
-	border-radius: 2em;
-	padding: 5px 10px;
-	font-weight: bold;
-}
-
-#up:hover{
-	color:white;
-	background-color: dodgerblue;
-}
-
-main a[href]{
- text-decoration: none;
 }
 
 p{
@@ -131,6 +112,29 @@ iframe{
 	float:none;
 }
 
+footer{
+	height: 100px;
+	background-color: dodgerblue;
+}
+
+#up{
+	position: fixed;
+	bottom:20px; 
+	right:0.5%;
+	margin: 0 2% 10px 2%;
+	color:black;
+	background-color: white;
+	text-decoration: none;
+	border-radius: 2em;
+	padding: 5px 10px;
+	font-weight: bold;
+}
+
+#up:hover{
+	color:white;
+	background-color: dodgerblue;
+}
+
 @media only screen and (min-width: 1024px){
 	main{
 		width:70%;
@@ -145,5 +149,10 @@ iframe{
 
 	.klein{
 		width: 10%;
+	}
+
+	.groot{
+		width:100%;
+		float:none;
 	}
 }
