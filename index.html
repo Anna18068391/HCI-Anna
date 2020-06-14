@@ -79,18 +79,9 @@
 					<img src="media/microsoft3d (4).png"/>
 					<img src="media/microsoft3d (5).png"/>
 					<img src="media/microsoft3d (6).png"/>
-					<video controls>
-						<source src="media/microsoft3d (7).mp4" type="video/mp4">
-						Je kan het filmpje niet kijken in deze browser.
-					</video>
-					<video controls>
-						<source src="media/microsoft3d (8).mp4" type="video/mp4">
-						Je kan het filmpje niet kijken in deze browser.
-					</video>
-					<video controls>
-						<source src="media/microsoft3d (9).mp4" type="video/mp4">
-						Je kan het filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/7psJpgRZJY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/hVjuY3BpcaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/epWJ9C5ayNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				<p>
 					Ten slotte heb ik Adobe Dimension gedownload, en hiermee geëxperimenteerd. Ik vond dit progamma erg fijn om te gebruiken. Hieronder is het proces en het resultaat te zien. Het koffielogo heb ik zelf getekend op mijn laptop.
@@ -187,9 +178,22 @@
 				</p>
 				<img src="media/wearables schetsen.jpg" class="groot" />
 				<p>
-					Voor de Oven Sensor zou ik de NTC termistor (temperatuursensor) gebruiken. Ik wist alleen niet zeker of deze sensor tegen hoge temperaturen zou kunnen. Dit ben ik gaan opzoeken. De sensor kan tegen temperaturen tussen de -30 en 124 graden Celcius. Mijn oven kan maximaal een temperatuur van 250 graden Celcius bereiken, dus dit kan de sensor helaas niet aan. Hierdoor bleven er twee concepten over.<br />
+					Voor de ovensensor zou ik de NTC termistor (temperatuursensor) gebruiken. Ik wist alleen niet zeker of deze sensor tegen hoge temperaturen zou kunnen. Dit ben ik gaan opzoeken. De sensor kan tegen temperaturen tussen de -30 en 124 graden Celcius. Mijn oven kan maximaal een temperatuur van 250 graden Celcius bereiken, dus dit kan de sensor helaas niet aan. Hierdoor bleven er twee concepten over.<br />
 					Ik heb voor de lichtgevende oren gekozen omdat dat echt een wearable is. Een wekker zoals het koffiealarm kan ook als los product gebruikt worden. De oren zijn alleen functioneel als je ze draagt.
 				</p>
+				<p>
+					Na aanleiding van feedback heb ik toch ook een prototype van de oven sensor gemaakt. De sensor zit vast aan draadje zodat je het makkelijk in de oven kan steken om de temperatuur te checken. Als de temperatuur zo hoog is dat het gevaarlijk is om dingen in de oven aan te raken, gaat het rode lampje branden. Als het veilig is om je handen in de oven te steken brandt het goene lampje. 
+				</p>
+				<p>
+					De ovensensor bestaat uit een Arduino, aangesloten op twee lampjes en een NTC termistor aan lange stroomdraden en een powerbank die de stroom levert. De code zorgt er met een if else statement voor dat als de sensor waardes geeft boven de 650 (een stuk hoger dan lichaamstemperatuur), het rode lampje gaat branden.
+				</p>
+				<div class="galerij">
+					<img src="media/ovensensor (1).png"/>
+					<img src="media/ovensensor (2).jpg"/>
+					<img src="media/ovensensor (3).jpg"/>
+					<img src="media/ovensensor (4).jpg"/>
+					<iframe src="https://www.youtube.com/embed/hUr1hWqKauU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 				<h3>Product</h3>
 				<p>
 					Ik had een duidelijk concept voor ogen, nu was het tijd om het concept uit te werken en een werkend prototype te realiseren.
@@ -199,7 +203,7 @@
 					Voordat ik een eerste prototype ging maken heb ik een kleine schets gemaakt van de stoomdraden. Ik ging lampjes gebruiken. Voor de lampjes heb je een draad nodig die stoom levert, een weerstandje en een draad die de stroom weer afvoert. Ik heb nog gekeken of ik de twee lampjes nog kon combineren waardoor ik minder draden nodig zou hebben. Maar dit heb ik uiteindelijk niet gedaan omdat de lampjes niet op een bord maar aan de losse draden vast zouden zitten. Hierdoor was het lastig om de lampjes aan meerdere draden en aan elkaar te koppelen.
 				</p>
 				<p>
-					Ik heb toen de code geschreven en een eerste prototype gemaakt. Het ging hier alleen om het stroomcircuit, nog niet om het design. Ik moest weten of de lampjes zouden werken op de manier die ik voor ogen had. Ik sloot alles draden op de Arduino aan, maakte de lampjes en draden vast aan de Arduino en uploadde de code, maar helaast gebeurde er niets. De lampjes gingen niet branden. Zelf nadat ik alles nog een keer had gecheckt werkte het niet.
+					Ik heb toen de code geschreven en een eerste prototype gemaakt. Het ging hier alleen om het stroomcircuit, nog niet om het design. Ik moest weten of de lampjes zouden werken op de manier die ik voor ogen had. Ik sloot alle draden op de Arduino aan, maakte de lampjes en draden vast aan de Arduino en uploadde de code, maar helaas gebeurde er niets. De lampjes gingen niet branden. Zelf nadat ik alles nog een keer had gecheckt werkte het niet.
 				</p>
 				<div class="galerij">
 					<img src="media/kattenoren (2).png"/>
@@ -222,10 +226,7 @@
 					<img src="media/kattenoren (5).jpg"/>
 					<img src="media/kattenoren (6).jpg"/>
 					<img src="media/kattenoren (7).jpg"/>
-					<video controls>
-						<source src="media/kattenoren (8).mp4" type="video/mp4">
-						Je kan het filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/MCOC34CYMdE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				<p>
 					Ik had het prototype gemaakt en sloot het aan op de laptop. Het werkte! Ik verbond toen een powerbank aan de Arduino zodat ik de diadeem op mijn hoofd kon zetten. Hier onder is het eindresultaat te zien.
@@ -233,10 +234,7 @@
 				<div class="galerij">
 					<img src="media/kattenoren (9).jpg"/>
 					<img src="media/kattenoren (10).jpg"/>
-					<video controls class="verticaal">
-						<source src="media/kattenoren (11).mp4" type="video/mp4">
-						Je kunt het filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/UbowkY4jTH4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				<h3>Reflectie</h3>
 				<p>
@@ -249,9 +247,59 @@
 			<article>
 				<h2>Artificial creatures</h2>
 				<h3>Onderzoek</h3>
-				<p></p>
+				<p>
+					<img src="media/tsuki.jpg" class="klein"/>
+					<a href="https://play.google.com/store/apps/details?id=com.hyperbeard.tsuki&hl=nl" target="_blank"><b>Tsuki Adventure</b></a><br />
+					<i>HyperBeard</i><br />
+					Tsuki Adventure is een spel voor op je smartphone. Je volg Tsuki, een konijn die vanuit de grote stad naar het platte land verhuisd. Dit konijn is een artificial creature. Het konijn heeft een eigen wil een als gebruiker kan je alleen kijken naar wat het konijn toevallige die dag aan het doen is, je hebt geen controle over het konijn.<br />
+					Ik vind it een indterresant spel omdat Tsuki een zelfstandig wezen is met een eigen wil, en je zelf niet veel invloed hebt in het spel. Hierdoor voelt Tsuki als een echt wezen, en niet zomaar een computer progamma.
+				</p>
+				<p>
+					<a href="https://en.wikipedia.org/wiki/Digesting_Duck" target="_blank"><b>Mechanische Eend</b></a><br />
+					<i>Jacques de Vaucanson</i><br />
+					De mechanische eend is een uitvindig van Jacques de Vaucanson in 1739 in Frankrijk. Het is een eend die graankorrels kon eten en verteren (de vertering bleek later niet echt te werken).<br />
+					Ik vind dit een heel interessant project. Het fachineert met dat ze in 1739 al bezig waren met artificial creatures. Het is duidelijk dat it in die tijd een hele bijzonderen en verniewende uitvinding was. Het is eigenlijk een van de eertse robots. Ik vind het ook leuk dat ze een eend hebben gekozen om te automatiseren. De focus op het verteringsysteem vind ik minder interessant, ik denk dat het juist een voordeel is dat robots niet hoeven te eten.
+				</p>
+				<p>
+					<a href="" target="_blank"><b>Google Home</b></a><br />
+					<i>Google</i><br />
+					Google Home is een voice assistent die je allerlei vragen kan stellen met je stem.<br/>
+					De Google Home heeft een eigen persoonlijkheid en klinkt anders dan Siri of Alexa. Er word express aandacht besteed aan de persoonlijkhied van de voice assistent want als gebruikers een connectie hebben met Google Home, maken ze er sneller gebruik van en voelen ze zich meer op gemak bij het gebruik. Google heeft een speciaal team dat zich bezig houd met de persoonlijhied van de Google Assistent. Dit drukt zich uit in antwoorden op vragen zoals 'wat is je lieveligskleur?' en 'Wat zijn je hobbies?'.
+				</p>
 				<h3>Experimenteren</h3>
-				<p></p>
+				<p>
+					Na het onderzoek doen ben ik gaan experimenteren en met de techniek, in dit geval de software Processing. In de les had ik voorbeelden gezien van stipjes en vormen die zich als zelfstandige wezens rondbewogen over het scherm en zelfs kolonies vormden. Met dit idee ben ik gaan coderen. Ik had een wiskundige formule gevonden die je kan gebruiken om grafieken mee te maken. Door de variable t te veranderen in de coodinaten x(t) en y(t), kon ik een stip over het canvas laten bewegen. Door stukjes van de formule voor x en y te veranderen onstaan er steeds andere vormen die er vaak organisch uit zien. Een beetje alsof er cellen groeien, of een kronkelige plant. Om de vormen spectaculaider te maken heb ik gezorgt dat de hue van de stipjes verandert. Ik heb ook wat interactie toegevoegt door een getal in de fomule te laten veranderen als er een toets word ingedrukt. Ten slotte is het mij gelukt om twee fomules te gebruiken als twee uitenden van een lijn. Een aantal van mijn best gelukte experimenten met de vormen zijn hier onder te zien.
+				</p>
+				<div class="galerij">
+					<img src="media/organisch (1).png"/>
+					<img src="media/organisch (2).png"/>
+					<img src="media/organisch (3).png"/>
+					<img src="media/organisch (4).png"/>
+					<img src="media/organisch (5).png"/>
+					<img src="media/organisch (6).png"/>
+					<img src="media/organisch (7).png"/>
+					<img src="media/organisch (8).png"/>
+					<iframe src="https://www.youtube.com/embed/MD03Xel3ivs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<p>
+					In mijn volgende experimenten wilde ik een duidelijk herkenbaar atificial creature maken. Dit heb ik met de Arduino Led matrix gedaan en met Processing.
+				</p>
+				<p>
+					Eerst heb ik geprobeerd om een atificial creature te maken door de LED matrix te grbuiken. Op de LED matrix zie je het gezicht van het wezen. Het wezen kan verschillende emoties uitdrukken. In de volgende stap wilde ik en knop aan de Arduino toevoegen, zodat je met het wezen zou kunnen interacteren, maar dit is niet gelukt.
+				</p>
+				<div class="galerij">
+					<img src="media/ledproto (1).png"/>
+					<img src="media/ledproto (2).png"/>
+					<iframe src="https://www.youtube.com/embed/6xcY8NLarcg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<p>
+					Met vormen heb ik een beestje gemaakt in Processing. Vervolgens heb ik twee knoppen toe gevoegd waardoor je met het wezen kan interacteren. Als je met de muis over het hartje hovert, word het beestje blij; als je met je muis over het gebroken hart hovert word het beestje ontevreden.
+				</p>
+				<div class="galerij">
+					<img src="media/beest (1).png"/>
+					<img src="media/beest (2).png"/>
+					<iframe src="https://www.youtube.com/embed/cSuH8_is0ws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 				<h3>Product</h3>
 				<p></p>
 				<h3>Reflectie</h3>
@@ -287,10 +335,7 @@
 					<img src="media/workshop_aframe (9).png"/>
 					<img src="media/workshop_aframe (10).png"/>
 					<img src="media/workshop_aframe (11).png"/>
-					<video controls>
-						<source src="media/workshop_aframe (12).mp4" type="video/mp4">
-						Je kunt het filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/1U6BIbsrnxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<img src="media/workshop_aframe (13).jpg"/>
 				</div>
 				<p><b>Unreal Engine</b></p>
@@ -301,10 +346,7 @@
 					<img src="media/workshop_unreal (4).png"/>
 					<img src="media/workshop_unreal (5).png"/>
 					<img src="media/workshop_unreal (6).png"/>
-					<video controls>
-						<source src="media/workshop_unreal (7).mp4" type="video/mp4">
-						Je kunt het filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/IYB5aBK1G5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<img src="media/workshop_unreal (8).png"/>
 				</div>
 				<h3>Arduino</h3>
@@ -312,97 +354,55 @@
 					<img src="media/workshop_arduino (2).png"/>
 					<img src="media/workshop_arduino (3).jpg"/>
 					<img src="media/workshop_arduino (4).png"/>
-					<video controls>
-						<source src="media/workshop_arduino (5).mp4" type="video/mp4">
-						Je kunt het filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/yxml4kXvly0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<img src="media/workshop_arduino (6).png"/>
-					<video controls>
-						<source src="media/workshop_arduino (7).mp4" type="video/mp4">
-						Je kunt het filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/fBCJTbv2mGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<img src="media/workshop_arduino (8).png"/>
-					<video controls>
-						<source src="media/workshop_arduino (9).mp4" type="video/mp4">
-						Je kunt het filmpje niet kijken in deze browser.
-					</video>
-					<video controls>
-						<source src="media/workshop_arduino (10).mp4" type="video/mp4">
-						Je kunthet filmpje niet kijken in deze browser.
-					</video>
-					<video controls>
-						<source src="media/workshop_arduino (11).mp4" type="video/mp4">
-						Je kunt het filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/she7ojsjiFg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/BrHrM7C2NRk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/_RCI1eWB4jg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<img src="media/workshop_arduino (12).png"/>
-					<video controls class="verticaal">
-						<source src="media/workshop_arduino (13).mp4" type="video/mp4">
-						Je kunt het filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/1SJO14vHRtM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				<div class="galerij">
 					<img src="media/workshop_arduino (14).png"/>
-					<video controls class="verticaal">
-						<source src="media/workshop_arduino (15).mp4" type="video/mp4">
-						Je kunt het filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/IRYFpxE-B-8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<img src="media/workshop_arduino (16).png"/>
-					<video controls class="verticaal">
-						<source src="media/workshop_arduino (17).mp4" type="video/mp4">
-						Je kunt het filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/5Gff_Dyvabg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<img src="media/workshop_arduino (18).png"/>
 					<img src="media/workshop_arduino (19).jpg"/>
-					<video controls class="verticaal">
-						<source src="media/workshop_arduino (20).mp4" type="video/mp4">
-						Je k huntet filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/qxRyvOQ6kI4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<img src="media/workshop_arduino (21).png"/>
 					<img src="media/workshop_arduino (22).jpg"/>
-					<video controls>
-						<source src="media/workshop_arduino (23).mp4" type="video/mp4">
-						Je kunt het filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/9u27-AE82tE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				<div class="galerij">
+					<iframe src="https://www.youtube.com/embed/WwyyDQUGjas" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<img src="media/workshop_arduino (25).png"/>
-					<video controls>
-						<source src="media/workshop_arduino (26).mp4" type="video/mp4">
-						Je kunt het filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/S8zZssr12c0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<img src="media/workshop_arduino (27).png"/>
-					<video controls class="verticaal">
-						<source src="media/workshop_arduino (28).mp4" type="video/mp4">
-						Je kunt het filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/sNHZRRSlAkk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<img src="media/workshop_arduino (29).png"/>
-					<video controls>
-						<source src="media/workshop_arduino (30).mp4" type="video/mp4">
-						Je kunt het filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/xBM3Xcjrcb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<img src="media/workshop_arduino (31).png"/>
 					<img src="media/workshop_arduino (32).jpg"/>
-					<video controls class="verticaal">
-						<source src="media/workshop_arduino (33).mp4" type="video/mp4">
-						Je kunt het filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/Sr9WGTIlDdY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				<h3>CV</h3>
 				<div class="galerij">
 					<img src="media/workshop_processing (1).png"/>
 					<img src="media/workshop_processing (2).png"/>
 					<img src="media/workshop_processing (3).png"/>
-					<video controls>
-						<source src="media/workshop_processing (4).mp4" type="video/mp4">
-						Je kunt het filmpje niet kijken in deze browser.
-					</video>
+					<iframe src="https://www.youtube.com/embed/VbsOfo2c5Zo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<img src="media/workshop_processing (5).png"/>
 					<img src="media/workshop_processing (6).png"/>
 					<img src="media/workshop_processing (7).png"/>
-					<video controls class="verticaal">
-						<source src="media/workshop_processing (8).mp4" type="video/mp4">
-						Je kunt het filmpje niet kijken in deze browser.
-					</video>
+					<img src="media/workshop_processing (8).png"/>
+					<img src="media/workshop_processing (9).png"/>
+					<img src="media/workshop_processing (10).png"/>
+					<img src="media/workshop_processing (11).png"/>
+					<img src="media/workshop_processing (12).png"/>
+					<iframe src="https://www.youtube.com/embed/HO0PzqOKA7w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</article>
 			<a name="gastcollege"></a>
