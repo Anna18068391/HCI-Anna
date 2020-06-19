@@ -257,11 +257,11 @@
 				<p>
 					<a href="https://en.wikipedia.org/wiki/Digesting_Duck" target="_blank"><b>Mechanische Eend</b></a><br />
 					<i>Jacques de Vaucanson</i><br />
-					De mechanische eend is een uitvinding van Jacques de Vaucanson in 1739 in Frankrijk. Het is een eend die graankorrels kon eten en verteren (de vertering bleek later niet echt te werken).<br />
+					De mechanische eend is een uitvinding van Jacques de Vaucanson in 1739 in Frankrijk. Het is een eend die graankorrels kon eten en verteren (de vertering bleek later niet echt te werken).<br /><img src="media/duck.jpg" class="klein"/>
 					Ik vind dit een heel interessant project. Het fachineert met dat ze in 1739 al bezig waren met artificial creatures. Het is duidelijk dat it in die tijd een hele bijzonderen en verniewende uitvinding was. Het is eigenlijk een van de eertse robots. Ik vind het ook leuk dat ze een eend hebben gekozen om te automatiseren. De focus op het verteringsysteem vind ik minder interessant, ik denk dat het juist een voordeel is dat robots niet hoeven te eten.
 				</p>
 				<p>
-					<a href="" target="_blank"><b>Google Home</b></a><br />
+					<a href="https://store.google.com/nl/magazine/compare_nest_speakers_displays" target="_blank"><b>Google Home</b></a><br />
 					<i>Google</i><br />
 					Google Home is een voice assistent die je allerlei vragen kan stellen met je stem.<br/>
 					De Google Home heeft een eigen persoonlijkheid en klinkt anders dan Siri of Alexa. Er wordt expres aandacht besteed aan de persoonlijkheid van de voice assistent want als gebruikers een connectie hebben met Google Home, maken ze er sneller gebruik van en voelen ze zich meer op gemak bij het gebruik. Google heeft zelfs een speciaal team dat zich bezig houdt met de persoonlijkheid van de Google Assistent. Dit drukt zich uit in antwoorden op vragen zoals 'wat is je lievelingskleur?' en 'Wat zijn je hobbies?'.
@@ -304,6 +304,9 @@
 				<p>
 					Als eindproduct voor het onderdeel artificial creature heb ik het beestje dat ik met Processing heb gemaakt tijdens het experimenteren verder uitgebreid en uitgewerkt. Ik heb een artificial creature gemaakt die in je computer leeft. Je kan met het beesjte interacteren en hem verzorgen.
 				</p>
+				<div class="galerij">
+					<img src="media/ac (4).jpg"/>
+				</div>
 				<iframe src="https://www.youtube.com/embed/ORMobxQ-x5k" class="groot" height="400" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<p>
 					Met de drie knoppen bovenaan het scherm kan je met het beestje interacteren. De knoppen werken met if else statements en een variable die bij houdt hoeveel keer er op de knop is gedrukt. Op deze manier kan je door verschillende opties klikken. De afbeeldingen op de knoppen heb ik zelf getekend.
@@ -322,6 +325,9 @@
 				<img src="media/ac (3).png" class="groot"/>
 				<p>
 					Tot slot kijken de ogen in de richting van je muis door mouseX en mouseY te gebruiken. 
+				</p>
+				<p>
+					Met de hulp van de docent en feedback heb ik het beest nog kunnen verbeteren. Met de variable knipper, word eke void draw loop getelt. Hierdoor kan ik het beestje laten knipperen om de 270 loops. Maar als het donker is hoort het beest te slapen, dan knippert het beest niet door de conditie klik2==0 (0 is licht en 1 is donker). Door het knipperen lijkt het artificial creature nog meer op een echt levend beestje. Ik heb ook de knoppen outfit en eten uitgeschakeld als het beest ligt te slapen door dit als conditie aan de booleans toe te voegen, onder aan de code. Hierdoor kan je het beest niet voeren als het ligt te slapen.
 				</p>
 				<p>
 					Hier onder is de hele code te zien, als je de code in Processing plakt en uitvoert kan je zelf met het beestje interacteren!
@@ -452,19 +458,95 @@ boolean mouseOverRect3() { // Test if mouse is over square
 }
 				</script>
 				<h3>Reflectie</h3>
-				<p></p>
+				<p>
+					Ik vond dit een leuke challenge omdat ik mezelf erg herken in het toekennen van menselijke eigenschappen aan dingen zoals computers. Ik houd ook erg van dieren, en in deze challenge mochten we eigenlijk zelf een soort dier creëren. Ik ben wel sceptisch over artificial creatures in de toekomst. Ik houd er niet van als robots er heel realistisch uitzien, en ik denk dat het in de toekomst steds moeilijker wordt om robots van echte mensen te onderscheiden. Omdat robots geen bewustzijn en moraal hebben, vertrouw ik ze niet in gevaarlijke situaties. Als een robot bijvoorbeeld geprogrammeerd is om vooruit te lopen, zal hij dit doen, zelfs als er een slapende kat op zijn pad ligt (tenzij hier rekening mee is gehouden natuurlijk). Daarom vind ik dat er hier duidelijke regels moeten worden opgesteld. Bijvoorbeeld eisen die de veiligheid van zelfrijdende auto's garanderen.<br />
+					Aan het begin van deze challenge was ik bang dat Processing erg ingewikkeld zou zijn, maar dit bleek erg mee te vallen en ik vond het zelfs leuk om er mee te experimenteren. Vooral het eerste experiment (de vormen met de formules) was erg leuk om te doen en heeft spectaculaire resultaten opgeleverd. Met mijn eindresultaat ben ik ook erg tevreden. Eerst had ik er een nieuwe functie aan toegvoegd, maar toen kwam er nog een nieuwe functie bij en toen nog een. Hierdoor werd het beest steeds uitgebreider. Ik wilde veel met Processing werken omdat we deze software net geleerd hadden. Achteraf gezien zou ik nog meer willen experimenteren met de mogelijkheden van de Arduino sensoren. Hiermee zou je meer een soort robotachtig wezen kunnen maken. 
+				</p>
 			</article>
 			<a name="play"></a>
 			<article>
 				<h2>Playfull interaction</h2>
 				<h3>Onderzoek</h3>
-				<p></p>
+				<p>
+					<a href="http://gamelab.mit.edu/playfulsocialinteractiondesign/teeter/" target="_blank"><b>Teeter</b></a><br />
+					<i>Sophia Chesrow</i><br />
+					Teeter is een balansspel wat je met twee personen speelt. Er zijn verschillende soorten spellen die je met de balans kan doen: balance, wrestling, ping pong en dance. Sommige spellen zijn coöperatief en andere competitief. Het spel gaat om de sociale interactie tussen de spelers.<br />
+					Het eerste wat mij opviel was het design van Teeter. Ik vind het een mooi en simpel design. Door de lichtjes valt het op en wordt je interesse gewekt. Ik vind het knap dat het spel zo voor zich spreekt dat er eigenlijk geen uitleg nodig is.
+				</p>
+				<p>
+					<a href="https://www.youtube.com/watch?v=KcaKocRXCB4" target="_blank"><b>The Speed Camera Lottery</b></a><br />
+					<i>Kevin Richardson</i><br />
+					Een flitser 
+					De snelheid van voorbijrijdende auto's wordt op een bord weergeven. Chauffeurs die te hard rijden betalen een boete. De volgende persoon die zich wel aan de snelheidlimiet houdt krijgt het geld van de boete en wint daarmee de loterij. Hiermee moeten chauffeurs aangemoedigd worden om zich aan de snelheidslimiet te houden.<br />
+					Ik denk dat dit een idee is wat goed zou werken. Door iedereen een kans te geven om de loterij te winnen als ze zich aan de snelheidslimiet houden, is het voor de mensen spannend of ze wel of niet iets winnen. Je geeft mensen een klein duwtje om minder hard te rijden.
+				</p>
+				<p>
+					<a href="https://www.youtube.com/watch?v=vWG6IWgX0Q8&list=PLED8A19B414F44DBF&index=133" target="_blank"><b>Give parents some peace!</b></a><br />
+					<i>Mert Hilmi Iseri</i><br />
+					Dit project is bedacht om het opruimen van kleding leuker te maken zodat kinderen het zelf gaan doen. De playfull interaction bestaat uit een magneetbord en kleine sterke magneetjes in de kleding. Hierdoor blijft de kleding aan het bord hangen als je het er op gooit.<br />
+					Ik vind dit een goed project omdat het een herkenbare dagelijkse taak leuker maakt. De kleding aan het bord ziet er een stuk opgeruimder uit dan als het op een stoel of op de grond ligt. Ik vind het ook leuk dat je het metalen bord kan personaliseren door er van alles op te plakken.
+				</p>
 				<h3>Experimenteren</h3>
-				<p></p>
+				<p>
+					Omdat spellen vaak op tijd gebaseerd zijn heb ik met de Arduino software en de LED matrix een timer gemaakt die van 1 tot 10 seconden telt. Er wordt elke keer gecheckt hoeveel milliseconden er voorbij zijn, en op basis hiervan wordt er een nummer op het LED display weergeven.
+				</p>
+				<div class="galerij">
+					<img src="media/timer.png"/>
+					<iframe src="https://www.youtube.com/embed/vLmtjrasDvg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<p>
+					Tijdens mijn onderzoek viel het me op dat er vaak game elementen in playfull interaction terugkomen. Tijdens een videogesprek kwam ik op een idee om een eigen game met processing te maken. Ik maak bij dit spel gebruik van een camera en Processing. Tijdens de workshop over Processing hebben we geleerd hoe we een computer gezichten kunnen laten herkennen. Ik heb tekst gemaakt die boven je gezicht blijft hangen, en een rechthoek zodat de tekst goed leesbaar is. Het spel werkt als volgt:
+				</p>
+				<ol>
+					<li>Je zit in een videogesprek en start het spel</li>
+					<li>Je kan jezelf niet zien op je scherm, maar de andere persoon wel</li>
+					<li>Je tegenspeler heeft een kaartje boven zijn hoofd met daarop een dier (of een naam van een beroemd persoon bijvoorbeeld)</li>
+					<li>Om de beurt kan je een vraag stellen waar de ander ja of nee op moet antwoorden</li>
+					<li>Het doel is om er achter te komen wie jij bent, als je het goed heb geraden klik je op het scherm om de volgende ronde te starten</li>
+				</ol>
+				<p>
+					Hieronder is de code in actie te zien, het spel is nog een prototype en kan je nog niet echt met twee personen spelen.
+				</p>
+				<div class="galerij">
+					<img src="media/wie (1).png"/>
+					<iframe src="https://www.youtube.com/embed/WiE5kKgfEGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<p>
+					Tijdens het testen van het spel kwam ik er achter dat het na 1 keer spelen niet meer een uitdaging was, omdat de volgorde van woorden steeds hetzelfde was. Daarom heb ik er met de functie random() voor gezorgd dat er geen volgorde in de woorden zit. Dit heb ik gedaan door de volgende regels aan de code van het spel toe te voegen:
+				</p>
+				<div class="galerij">
+					<img src="media/wie (2).png"/>
+					<img src="media/wie (3).png"/>
+				</div>
 				<h3>Product</h3>
-				<p></p>
+				<p>
+					Als eindproduct wilde ik net als de playfull interaction projecten van de Fun Theory, een vervelende dagelijkse taak leuk en playfull maken. Ik wilde geen interactie via een scherm, maar interactie door te bewegen. Een taak die niet echt leuk is, is de was doen. Aan deze taak heb ik een game element, namelijk punten, toegevoegd.
+				</p>
+				<p>
+					Het wasmachine spel bestaat uit een sensor die beweging registreert, een LED matrix, een Arduino en een powerbank. De bewegingssensor bevestig je bij de opening van de wasmachinedeur. De LED matrix moet goed zichtbaar zijn als je bij de wasmachine zit. Zodra er een kledingstuk in de wastrommel wordt gegooid, begint het spel. Voor elk kledingstuk dat je in de wasmachine gooit, krijg je een punt. De puntentelling wordt bijgehouden op de LED matrix. Op dit moment heb je gewonnen bij tien punten, dan verschijnt er een beker op de LED matrix.
+				</p>
+				<div class="galerij">
+					<img src="media/wasmachien (0).jpg"/>
+					<img src="media/wasmachien (1).png"/>
+					<iframe src="https://www.youtube.com/embed/Hh1KBhqBBTs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<img src="media/wasmachien (3).jpg"/>
+					<img src="media/wasmachien (4).jpg"/>
+					<img src="media/wasmachien (5).jpg"/>
+					<img src="media/wasmachien (6).png"/>
+					<img src="media/wasmachien (7).png"/>
+					<img src="media/wasmachien (8).jpg"/>
+					<img src="media/wasmachien (9).jpg"/>
+					<iframe src="https://www.youtube.com/embed/zj1w9_JptMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/NoMLsf4O6to" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<p>
+					Door dit playfull interaction project is de was doen iets leuker geworden. Spelers worden ook gemotiveerd door de punten waardoor ze gefocust blijven op de taak. Ik denk dat het nog interessanter wordt als er prijzen zijn te verdienen, zoals een reep chocolade bij honderd punten.
+				</p>
 				<h3>Reflectie</h3>
-				<p></p>
+				<p>
+					Het idee van playfull interaction: dingen leuker en interactief maken, spreekt mij erg aan. Vooral het leuker maken van niet leuke taken. De voorbeelden in de les verrasten mij omdat mensen echt hun gedrag ten goede gingen veranderen door iets kleins zoals een leuk geluidje of interactieve lichtjes. Ik vind dat playfull ineraction in de toekomst ingezet moet worden om mensen aan te sporen om goed gedrag te vertonen, zoals afval in de prullenbak gooien en niet op straat.<br />
+					Ik vond het moeilijke aan de challenge playfull interaction dat er zo veel mogelijkheden zijn, omdat er veel onder de term valt. Het hielp mij om goede voorbeelden te zoeken en de tijd te nemen om na te denken en te brainstormen over ideeën. Het gebruik van de technologie Arduino en Processing gaat steeds sneller en makkelijker, omdat we hier nu al een paar weken mee werken. Ik ben erg blij met mijn eindproduct omdat ik graag een eindproduct wilde maken waarbij de ineractie niet alleen met een scherm is, die een vervelende taak leuker maakt en waarbij je beweegt. Het wasmachinespel voldoet aan deze punten.
+				</p>
 			</article>
 			<a name="workshops"></a>
 			<article>
