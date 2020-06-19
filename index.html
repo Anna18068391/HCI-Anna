@@ -307,7 +307,7 @@
 				<div class="galerij">
 					<img src="media/ac (4).jpg"/>
 				</div>
-				<iframe src="https://www.youtube.com/embed/ORMobxQ-x5k" class="groot" height="400" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/_ggsom6yghY" class="groot" height="400" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<p>
 					Met de drie knoppen bovenaan het scherm kan je met het beestje interacteren. De knoppen werken met if else statements en een variable die bij houdt hoeveel keer er op de knop is gedrukt. Op deze manier kan je door verschillende opties klikken. De afbeeldingen op de knoppen heb ik zelf getekend.
 				</p>
@@ -327,13 +327,15 @@
 					Tot slot kijken de ogen in de richting van je muis door mouseX en mouseY te gebruiken. 
 				</p>
 				<p>
-					Met de hulp van de docent en feedback heb ik het beest nog kunnen verbeteren. Met de variable knipper, word eke void draw loop getelt. Hierdoor kan ik het beestje laten knipperen om de 270 loops. Maar als het donker is hoort het beest te slapen, dan knippert het beest niet door de conditie klik2==0 (0 is licht en 1 is donker). Door het knipperen lijkt het artificial creature nog meer op een echt levend beestje. Ik heb ook de knoppen outfit en eten uitgeschakeld als het beest ligt te slapen door dit als conditie aan de booleans toe te voegen, onder aan de code. Hierdoor kan je het beest niet voeren als het ligt te slapen.
+					Met de hulp van de docent en feedback heb ik het beest nog kunnen verbeteren. Met de variable knipper, word eke void draw loop getelt. Hierdoor kan ik het beestje laten knipperen om de 270 loops. Maar als het donker is hoort het beest te slapen, dan knippert het beest niet door de conditie klik2==0 (0 is licht en 1 is donker). Door het knipperen lijkt het artificial creature nog meer op een echt levend beestje. Ik heb ook de knoppen outfit en eten uitgeschakeld als het beest ligt te slapen door dit als conditie aan de booleans toe te voegen, onder aan de code. Hierdoor kan je het beest niet voeren als het ligt te slapen. Als laatste is de functie beestSize() toegevoegd, waarmee het beest steeds kleiner wordt waardoor je hem moet voeren.
 				</p>
 				<p>
 					Hier onder is de hele code te zien, als je de code in Processing plakt en uitvoert kan je zelf met het beestje interacteren!
 				</p>
 				<script type="text/html">
 //https://colorhunt.co/palette/165754
+
+int knipper=0;
 
 color ag=color(250);
 int oogl =200;
@@ -363,11 +365,14 @@ void setup(){
 }
 
 void draw(){  
+  background(ag);
+  beestSize();
+  
   //beest
   noStroke();
   fill(kleurbeest);
   ellipseMode(CENTER);
-  ellipse(250, 250, grotex, grotex);
+  ellipse(250, 250, grotex, grotey);
   
   //oog1
   noStroke();
@@ -385,8 +390,22 @@ void draw(){
   fill(255, 169, 148);
   triangle(225, 275, 275, 275, 250, 300);
   
+  //knipper
+  if(klik2==0){
+    knipper++;
+    if (knipper == 270){
+      knipper=0;
+    }
+    if (knipper>250) {
+      oog=10;
+    }
+    else{
+      oog=50;
+    }
+  }
+  
   //knop1 outfit
-  if (mouseOverRect1() == true && mousePressed == true) { // If mouse is over square, 
+  if (mouseOverRect1() == true && mousePressed == true) {
     if(klik1==3){
       klik1=0;
     }
@@ -411,16 +430,16 @@ void draw(){
   image(outfit, 10, 10, 100, 100);
   
   //knop2 eten
-  if (mouseOverRect2() == true&& mousePressed == true) { // If mouse is over square,
-    grotex=grotex+10;
-    grotey=grotey+2;
+  if (mouseOverRect2() == true&& mousePressed == true) { 
+    grotex=grotex+5;
+    grotey=grotey+5;
   }   
   fill(ag);
   rect(200, 10, 100, 100);
   image(eten, 200, 10, 100, 100);
   
   //knop3 slapen
-  if (mouseOverRect3() == true&& mousePressed == true) { // If mouse is over square,
+  if (mouseOverRect3() == true&& mousePressed == true) {
     if(klik2==2){
       klik2=0;
     }
@@ -444,17 +463,27 @@ void draw(){
   rect(390, 10, 100, 100);
   image(slapen, 390, 10, 100, 100);
 }
-  
-boolean mouseOverRect1() { // Test if mouse is over square
-  return ((mouseX >= 10) && (mouseX <= 110) && (mouseY >= 10) && (mouseY <= 110));
+
+boolean mouseOverRect1() {
+  return ((klik2==0)&& (mouseX >= 10) && (mouseX <= 110) && (mouseY >= 10) && (mouseY <= 110));
 }
 
-boolean mouseOverRect2() { // Test if mouse is over square
-  return ((mouseX >= 200) && (mouseX <= 300) && (mouseY >= 10) && (mouseY <= 110));
+boolean mouseOverRect2() {
+  return ((klik2==0)&&(mouseX >= 200) && (mouseX <= 300) && (mouseY >= 10) && (mouseY <= 110));
 }
 
-boolean mouseOverRect3() { // Test if mouse is over square
+boolean mouseOverRect3() {
   return ((mouseX >= 390) && (mouseX <= 490) && (mouseY >= 10) && (mouseY <= 110));
+}
+
+//beest kleiner
+void beestSize(){
+  if(grotex>150 && (frameCount % 100) == 1){
+    grotex--;
+  }
+  if(grotey>150 && (frameCount % 100) == 1){
+    grotey--;
+  }
 }
 				</script>
 				<h3>Reflectie</h3>
